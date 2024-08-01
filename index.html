@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.google.com/specimen/Poppins">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calculador Idade</title>
+</head>
+<body>
+    <main>
+        <div class="secao__principal">
+            <div class="secao__datas">
+                <div class="data__nascimento">
+                    <label for="">Day</label>
+                    <input type="text" placeholder="DD" id="data-dia">
+                    <span id="erro-dia" class="erro__datas"></span>
+                </div>
+
+                <div class="data__nascimento">
+                    <label for="">Month</label>
+                    <input type="text" placeholder="MM" id="data-mes">
+                    <span id="erro-mes" class="erro__datas"></span>
+                </div>
+
+                <div class="data__nascimento">
+                    <label for="">Year</label>
+                    <input type="text" placeholder="YYYY" id="data-ano">
+                    <span id="erro-ano" class="erro__datas"></span>
+                </div>
+            </div>
+
+            <div class="secao__seta">
+                <div class="footer"></div>
+                <button id="controle-idade"><img src="./assets/imagem/icon-arrow.svg" alt="Seta" width="50px"></button>
+            </div>
+
+            <div class="secao__idade">
+                <div class="secao__idade__result">
+                    <strong id="idade-ano">--</strong><h2>years</h2>
+                </div>
+                <div class="secao__idade__result">
+                    <strong id="idade-mes">--</strong><h2>months</h2>
+                </div>
+                <div class="secao__idade__result">
+                    <strong id="idade-dia">--</strong><h2>days</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

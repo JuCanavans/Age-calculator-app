@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-roxo: hsl(259, 100%, 65%);
+    --color-red: hsl(0, 100%, 67%);
+    --color-white: #ffffff;
+    --color-datas: #727272;
+    --bg-fundo: hsl(0, 0%, 86%);
+    --fonte-principal: "Poppins", sans-serif;
+}
+
+body{
+    background: var(--bg-fundo);
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+    overflow: hidden;
+}
+
+main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.secao__principal{
+    width: 640px;
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 0.7rem 0.7rem 5rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.secao__datas{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 21px;
+}
+
+.data__nascimento{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.data__nascimento label{
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-datas);
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+.data__nascimento input{
+    max-width: 130px;
+    padding: 1rem;
+    border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #161616;
+}
+
+.data__nascimento input:focus{
+    border: 2px solid var(--color-roxo);
+    outline: none;
+}
+
+.erro__datas{
+    display: none;
+    padding-top: 0.2rem;
+    font-size: 11px;
+    font-weight: 700;
+    color: red;
+}
+
+/**/
+
+.secao__seta{
+    padding-top: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer{
+    width: 100%;
+    height: 2px;
+    background-color: #e4e4e4;
+}
+
+.secao__seta button{
+    display: flex;
+    position: relative;
+    background-color: var(--color-roxo);
+    padding: 1rem;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    top: -40px;
+}
+
+.secao__seta button:hover{
+    background-color: #151515;
+}
+
+/**/
+
+.secao__idade__result{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+.secao__idade__result strong,
+.secao__idade__result h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #161616;
+}
+
+.secao__idade__result strong{
+    color: var(--color-roxo);
+}
+
+/*Resposividade mobile*/
+
+@media screen and (max-width: 665px){
+    .secao__principal{
+        width: 100%;
+    }
+    .data__nascimento label{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 2px;
+    }
+    .data__nascimento input{
+        max-width: 100px;
+        padding: 0.7rem;
+        font-size: 21px;
+        line-height: 14px;
+    }
+    .secao__seta button img{
+        width: 30px;
+    }
+
+    .secao__seta{
+        padding-top: 2.7rem;
+        align-items: center;
+    }
+
+    .secao__seta button{
+        position: relative;
+        padding: 0.8rem;
+        top: -30px;
+    }
+}
