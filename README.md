@@ -13,7 +13,7 @@
 </div>
 
 ## 🌐 Website
-Visit the [Age calculator app](https://newsletter-blush-one.vercel.app/) to explore the live site.
+Visit the [Age calculator app](https://age-calculator-app-two-blush.vercel.app/) to explore the live site.
 
 Visit the [Front-end Mentor](https://www.frontendmentor.io/) to explore the live site.
 
